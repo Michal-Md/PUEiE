@@ -1685,6 +1685,58 @@
         )
       )
     )
+    (symbol "VDD_1" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "VDD_1" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"VDD\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "VDD_1_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "VDD_1_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "VDD" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "VDD_2" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -2342,7 +2394,7 @@
     (stroke (width 0) (type default))
     (uuid 069a90cd-248c-4959-aff3-d4a6bf1522cb)
   )
-  (wire (pts (xy 256.54 80.01) (xy 256.54 87.63))
+  (wire (pts (xy 256.54 78.7908) (xy 256.54 87.63))
     (stroke (width 0) (type default))
     (uuid 07191993-b8fc-4e39-9598-50de6c8ad4be)
   )
@@ -2530,7 +2582,7 @@
     (stroke (width 0) (type default))
     (uuid 46a3c4be-829f-44f7-bd1d-aab2154d635c)
   )
-  (wire (pts (xy 278.13 80.01) (xy 278.13 88.9))
+  (wire (pts (xy 278.003 78.6892) (xy 278.003 87.5792))
     (stroke (width 0) (type default))
     (uuid 46e10246-809d-4ec3-8295-fee0ae188a3a)
   )
@@ -3146,6 +3198,10 @@
     (uuid fa352186-a0f5-4647-8f11-7e8b65e31243)
   )
 
+  (text "3.3V" (at 87.122 163.6014 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6253eaf8-57df-47ef-86ec-09cfb4b7f3d1)
+  )
   (text "PSU" (at 13.97 156.21 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9219269d-ceda-4fac-8784-5df46ec0f12a)
@@ -3300,7 +3356,7 @@
     (pin "3" (uuid 2081c7f1-afb8-41bc-9895-15a1595a943d))
     (pin "4" (uuid fd7ec99e-cc3d-4c50-adc6-fff919cd948a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "Y2") (unit 1)
         )
@@ -3373,7 +3429,7 @@
     (pin "8" (uuid e5a806a3-b0c8-4b5c-89c6-2691a73b0a33))
     (pin "9" (uuid cefa9eb9-d097-487d-b12c-867330afa422))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "U1") (unit 1)
         )
@@ -3399,7 +3455,7 @@
     (pin "1" (uuid cff9e15e-e97a-4b87-95e3-e49f8a4529b4))
     (pin "2" (uuid 46b3606f-24eb-434d-b26c-280cde102428))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L3") (unit 1)
         )
@@ -3425,7 +3481,7 @@
     (pin "1" (uuid 08e77ee9-cea3-4111-beb4-bbd718ebfd34))
     (pin "2" (uuid 6456bed3-80d3-4451-b55c-68c3b246a75f))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R3") (unit 1)
         )
@@ -3451,7 +3507,7 @@
     (pin "1" (uuid 2d479ca9-32ab-4d80-b508-48fa2be81646))
     (pin "2" (uuid fd3e8f46-35f3-4564-9840-bfa55825afba))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C23") (unit 1)
         )
@@ -3477,7 +3533,7 @@
     (pin "1" (uuid b286fbf0-c2f9-4ef1-9edd-0e7c3b8e7e54))
     (pin "2" (uuid cf179c10-f843-4295-aedc-2d58ec407194))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R8") (unit 1)
         )
@@ -3509,7 +3565,7 @@
     (pin "7" (uuid 7e2c3c1d-03fd-4141-bc97-67bf0a656191))
     (pin "8" (uuid cde45750-e085-4a12-ae46-b025a486ef2c))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "U2") (unit 1)
         )
@@ -3535,7 +3591,7 @@
     (pin "1" (uuid b3416cf9-bf5f-4e15-a4a1-591532dccef2))
     (pin "2" (uuid 42bf781a-34c8-4713-8d26-8f7d17aab411))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "J3") (unit 1)
         )
@@ -3560,7 +3616,7 @@
     )
     (pin "1" (uuid 3a712c96-3b13-4f3d-9aaf-e3035b48f0ec))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR019") (unit 1)
         )
@@ -3586,7 +3642,7 @@
     (pin "1" (uuid f4cec2f4-e41a-44b3-85b6-800ef4c9229b))
     (pin "2" (uuid 93cf9d7c-654c-4a62-9d9d-75a1f7c0fff3))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C22") (unit 1)
         )
@@ -3611,7 +3667,7 @@
     )
     (pin "1" (uuid 903ee31f-57f6-4729-9e12-3747f7bdf677))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR011") (unit 1)
         )
@@ -3637,7 +3693,7 @@
     (pin "1" (uuid 219ecd30-5c1b-412c-b52c-c72521c5b6ac))
     (pin "2" (uuid 84b0f476-ab58-40dd-a9be-7af8823f2155))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C19") (unit 1)
         )
@@ -3662,7 +3718,7 @@
     )
     (pin "1" (uuid 5299ac0e-f346-4722-a9f8-30b02c296b49))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR03") (unit 1)
         )
@@ -3687,7 +3743,7 @@
     )
     (pin "1" (uuid 69c17287-19a8-4937-bd0a-ce4be63b9a2b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR027") (unit 1)
         )
@@ -3712,7 +3768,7 @@
     )
     (pin "1" (uuid a7e5226f-d987-4da9-8806-beceea711d5e))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR043") (unit 1)
         )
@@ -3738,7 +3794,7 @@
     (pin "1" (uuid 7cc952cc-e6c6-4a92-a1a2-3cdb0104e245))
     (pin "2" (uuid a53d9c07-5bb2-4d09-8527-7984307de80d))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C18") (unit 1)
         )
@@ -3764,7 +3820,7 @@
     (pin "1" (uuid f9d7d2f1-1706-4393-aa15-177105903ab3))
     (pin "2" (uuid 691552e6-0488-4a58-b5e0-80d646599033))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L2") (unit 1)
         )
@@ -3789,7 +3845,7 @@
     )
     (pin "1" (uuid abe8b322-b0b5-4653-87cd-1525e061d54c))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR040") (unit 1)
         )
@@ -3814,7 +3870,7 @@
     )
     (pin "1" (uuid 1a815443-5a25-4b3b-8b18-7a0b1cd656fd))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR09") (unit 1)
         )
@@ -3840,7 +3896,7 @@
     (pin "1" (uuid b7a43f64-38a4-4be9-b2b2-b854ca09ae9f))
     (pin "2" (uuid 4b93e695-33a8-4d3a-a675-a303db854c55))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R9") (unit 1)
         )
@@ -3866,7 +3922,7 @@
     (pin "1" (uuid 7c4c4175-b708-490c-b4c8-f0e782b13b80))
     (pin "2" (uuid 97f1b6cd-8b7e-4882-9e11-5c66dbcec662))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C25") (unit 1)
         )
@@ -3892,7 +3948,7 @@
     (pin "1" (uuid 13f781af-6c5d-485a-bceb-b35d2265a9ea))
     (pin "2" (uuid dc89b586-02e3-4df7-ad6a-d8b791a20bb8))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C11") (unit 1)
         )
@@ -3918,7 +3974,7 @@
     (pin "1" (uuid 171ae3f1-fca2-487f-a3a5-12ad5b680601))
     (pin "2" (uuid ebabb800-ee50-49b7-a2ab-c12379c296b5))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C9") (unit 1)
         )
@@ -3943,7 +3999,7 @@
     )
     (pin "1" (uuid e1db7233-0a14-4e1a-9092-deb7a2bb434f))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR023") (unit 1)
         )
@@ -3968,7 +4024,7 @@
     )
     (pin "1" (uuid 90c14a1e-b6ff-4a2c-beae-f5fb7b51733e))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR022") (unit 1)
         )
@@ -3993,7 +4049,7 @@
     )
     (pin "1" (uuid 8785c25b-faf9-48ff-9b5d-463f3a52e57d))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR025") (unit 1)
         )
@@ -4019,7 +4075,7 @@
     (pin "1" (uuid bbc33272-a8eb-49f7-8962-dd02c471fa4a))
     (pin "2" (uuid 10bf13a1-cc1f-4926-a1d5-58859d48bdc6))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C5") (unit 1)
         )
@@ -4044,7 +4100,7 @@
     )
     (pin "1" (uuid 5a3597c0-6f15-4333-aad7-e48268bb92b2))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR036") (unit 1)
         )
@@ -4070,7 +4126,7 @@
     (pin "1" (uuid 88a43fa5-8f05-4c32-a85b-72034a1ef9f4))
     (pin "2" (uuid a9a19a6f-d621-471f-a62f-80fee08ae0d0))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C21") (unit 1)
         )
@@ -4095,7 +4151,7 @@
     )
     (pin "1" (uuid 670e8a23-7f5b-48ca-b80b-d7ce179b52e5))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR020") (unit 1)
         )
@@ -4121,7 +4177,7 @@
     (pin "1" (uuid 80034ec5-0ef2-4e4c-b93d-58f4f238c926))
     (pin "2" (uuid 1b6c73e2-ebb1-4f3e-880a-06c9b975ee04))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C27") (unit 1)
         )
@@ -4146,7 +4202,7 @@
     )
     (pin "1" (uuid 2f7ede7b-5881-4e91-9f1c-606a371db643))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR01") (unit 1)
         )
@@ -4154,24 +4210,24 @@
     )
   )
 
-  (symbol (lib_id "power:VDD") (at 278.13 80.01 0) (unit 1)
+  (symbol (lib_id "power:VDD") (at 278.003 78.6892 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44ed12f1-d2f8-4c2e-82c5-2f74ee394007)
-    (property "Reference" "#PWR021" (at 278.13 83.82 0)
+    (property "Reference" "#PWR021" (at 278.003 82.4992 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VDD" (at 278.13 74.93 0)
+    (property "Value" "VDD" (at 278.003 73.6092 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 278.13 80.01 0)
+    (property "Footprint" "" (at 278.003 78.6892 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 278.13 80.01 0)
+    (property "Datasheet" "" (at 278.003 78.6892 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3a23e5cb-7f24-4aa9-ac85-2cfba62d4246))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR021") (unit 1)
         )
@@ -4196,7 +4252,7 @@
     )
     (pin "1" (uuid 15fe7ee8-7138-401c-bdce-8d5234bee47b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR035") (unit 1)
         )
@@ -4222,7 +4278,7 @@
     (pin "1" (uuid d03ce690-459b-49c0-a024-bda84e4b46d5))
     (pin "2" (uuid 8fde7466-cfa6-4d75-a9cc-f7e167d37dad))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R7") (unit 1)
         )
@@ -4248,7 +4304,7 @@
     (pin "1" (uuid 7d31e8c2-0aa0-486c-89ab-93a2ce94b5fd))
     (pin "2" (uuid e4d1b1a2-4f85-4ee0-b5de-a9a2878b75ef))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C12") (unit 1)
         )
@@ -4273,7 +4329,7 @@
     )
     (pin "1" (uuid 94dad085-772a-4921-bc28-b7c3d23d6fff))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR034") (unit 1)
         )
@@ -4299,7 +4355,7 @@
     (pin "1" (uuid 0f4c0020-ec3e-433f-9b13-4310dc88939d))
     (pin "2" (uuid c8a32707-e086-403a-8bfe-52c7d2a0d9b4))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C13") (unit 1)
         )
@@ -4325,7 +4381,7 @@
     (pin "1" (uuid de616747-9894-4bbc-9e89-997c7502a39d))
     (pin "2" (uuid b83026c4-9f82-4d17-97ac-99c4520585fa))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C8") (unit 1)
         )
@@ -4350,7 +4406,7 @@
     )
     (pin "1" (uuid af652153-a7a3-4702-a78f-fbef5a9f095b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR012") (unit 1)
         )
@@ -4376,7 +4432,7 @@
     (pin "1" (uuid ea120bd9-166e-4604-abcb-6d6bc64d227e))
     (pin "2" (uuid 428541c1-3bc9-4b42-99f7-0877316b445b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R5") (unit 1)
         )
@@ -4402,7 +4458,7 @@
     (pin "1" (uuid edb0cb35-ba1e-4cdd-8500-36305dfa68cd))
     (pin "2" (uuid 36834858-4baa-4ecc-b429-792618fcb15a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C14") (unit 1)
         )
@@ -4427,7 +4483,7 @@
     )
     (pin "1" (uuid 7b1c040e-96b2-4594-a16a-aa531069d874))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR029") (unit 1)
         )
@@ -4453,7 +4509,7 @@
     (pin "1" (uuid fe22d467-1564-4505-a6e3-1cfbffb1f4b9))
     (pin "2" (uuid 49507341-40e9-44a7-9e82-92795c55c031))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C17") (unit 1)
         )
@@ -4480,7 +4536,7 @@
     (pin "2" (uuid 32788cff-cee7-418d-acc3-51af4641875c))
     (pin "3" (uuid 12d85a18-179b-4cd3-af02-9789a5071cf4))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "D1") (unit 1)
         )
@@ -4506,7 +4562,7 @@
     (pin "1" (uuid 6af641c9-ed78-42f7-826e-b5ed5cf02a34))
     (pin "2" (uuid 6b47931a-6260-4aad-a026-2943293a5ce8))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C15") (unit 1)
         )
@@ -4531,7 +4587,7 @@
     )
     (pin "1" (uuid 5adf541a-e96c-4829-a980-f4176963ec1c))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR016") (unit 1)
         )
@@ -4560,7 +4616,7 @@
     (pin "4" (uuid 03767bfe-8832-4169-93ef-f93846b74fd4))
     (pin "5" (uuid 76f8059b-3cca-4795-8267-22f3fd39e0aa))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "U5") (unit 1)
         )
@@ -4586,7 +4642,7 @@
     (pin "1" (uuid d2c56616-966f-4810-9e93-a4f7165b4bff))
     (pin "2" (uuid 8d88ed6a-0d8a-40ff-b424-a887f04a9be6))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L7") (unit 1)
         )
@@ -4612,7 +4668,7 @@
     (pin "1" (uuid 9212ab85-ee86-46d6-a311-0be93f365fc0))
     (pin "2" (uuid 8504b1ac-d0e6-402a-b0cb-65c9d9593448))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R2") (unit 1)
         )
@@ -4638,7 +4694,7 @@
     (pin "1" (uuid 477a3769-ba31-40e5-960c-ae1b6425cfe1))
     (pin "2" (uuid 3519feb0-db17-471a-989a-941411b165fe))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R4") (unit 1)
         )
@@ -4663,7 +4719,7 @@
     )
     (pin "1" (uuid bd9602bb-a6f8-4e57-bdb7-e964139da667))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR026") (unit 1)
         )
@@ -4688,7 +4744,7 @@
     )
     (pin "1" (uuid 84116ee9-28a2-4789-a1ae-6d68d2c5138a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR017") (unit 1)
         )
@@ -4714,7 +4770,7 @@
     (pin "1" (uuid 3bf5e429-e20b-45ae-8efd-a6e9db1623be))
     (pin "2" (uuid 4b6be37d-6a73-4969-b257-10d7e68c214f))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "J1") (unit 1)
         )
@@ -4740,7 +4796,7 @@
     (pin "1" (uuid c5119f02-f546-432f-b7d4-fe2990985326))
     (pin "2" (uuid d7b3b45a-5664-4038-91a4-2db3109bfa51))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C4") (unit 1)
         )
@@ -4765,7 +4821,7 @@
     )
     (pin "1" (uuid 3a2291bf-8780-408c-8752-24d4c54877b2))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR031") (unit 1)
         )
@@ -4790,7 +4846,7 @@
     )
     (pin "1" (uuid 73742f31-e48a-4cdc-974a-3e6e0db912e8))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR02") (unit 1)
         )
@@ -4815,7 +4871,7 @@
     )
     (pin "1" (uuid 7b172109-1bf9-4db6-808b-7e857217b7e2))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR08") (unit 1)
         )
@@ -4823,24 +4879,24 @@
     )
   )
 
-  (symbol (lib_name "GND_2") (lib_id "power:GND") (at 256.54 80.01 180) (unit 1)
+  (symbol (lib_name "GND_2") (lib_id "power:GND") (at 256.54 78.7908 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8aa7b557-1f99-408b-be35-e5fe77d43cd2)
-    (property "Reference" "#PWR039" (at 256.54 73.66 0)
+    (property "Reference" "#PWR039" (at 256.54 72.4408 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 254 76.2 0)
+    (property "Value" "GND" (at 254 74.9808 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 256.54 80.01 0)
+    (property "Footprint" "" (at 256.54 78.7908 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 256.54 80.01 0)
+    (property "Datasheet" "" (at 256.54 78.7908 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a5e9a7f7-98e6-49be-96ea-efa35c31d6ca))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR039") (unit 1)
         )
@@ -4866,7 +4922,7 @@
     (pin "1" (uuid 0af5dab9-4a7f-4082-b109-b8934373d541))
     (pin "2" (uuid d6641ebb-01ac-410b-b3eb-ad4f1229c353))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R1") (unit 1)
         )
@@ -4891,7 +4947,7 @@
     )
     (pin "1" (uuid 133b76c6-a531-4c24-b50f-170fc3af9085))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR05") (unit 1)
         )
@@ -4916,7 +4972,7 @@
     )
     (pin "1" (uuid f2a030ea-d05d-49cb-9005-469ecd9f12c1))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#FLG03") (unit 1)
         )
@@ -4942,7 +4998,7 @@
     (pin "1" (uuid 23ca36d2-cd7c-4ec9-a9c7-42aaaa7dcb31))
     (pin "2" (uuid 165699b8-aad3-4bb6-a15e-21657c72621c))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L4") (unit 1)
         )
@@ -4968,7 +5024,7 @@
     (pin "1" (uuid dd8f973a-bf9d-4696-938b-83c7dcf7b4c7))
     (pin "2" (uuid cd71354b-79ba-450a-b841-2b4fc89d7d40))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C7") (unit 1)
         )
@@ -4994,7 +5050,7 @@
     (pin "1" (uuid 44bb77f4-e82a-46ae-892f-b78b2c85e967))
     (pin "2" (uuid d5a4a174-ec01-4d08-a68f-f4c811313060))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C24") (unit 1)
         )
@@ -5022,7 +5078,7 @@
     (pin "3" (uuid ee7882c4-1fe7-4c3f-b3ff-3c83191d1ba0))
     (pin "4" (uuid df45f43f-546b-4e5b-9c9a-b14c05cf7ed7))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "U3") (unit 1)
         )
@@ -5048,7 +5104,7 @@
     (pin "1" (uuid 6d578e84-de50-4f88-b3cf-958f03a5af48))
     (pin "2" (uuid 512ab5f3-fdb6-4ceb-86a3-5db7725ef622))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C1") (unit 1)
         )
@@ -5056,24 +5112,24 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 278.13 88.9 180) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 278.003 87.5792 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab88a5f7-9beb-4bb0-8612-4a4bc8f814d1)
-    (property "Reference" "#FLG01" (at 278.13 90.805 0)
+    (property "Reference" "#FLG01" (at 278.003 89.4842 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (at 278.13 93.98 0)
+    (property "Value" "PWR_FLAG" (at 278.003 92.6592 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 278.13 88.9 0)
+    (property "Footprint" "" (at 278.003 87.5792 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 278.13 88.9 0)
+    (property "Datasheet" "~" (at 278.003 87.5792 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a64a7de9-d24a-41d8-81ab-1cc9b0b15d68))
+    (pin "1" (uuid 061545c3-731d-49c1-9c81-3d227f2a28fd))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#FLG01") (unit 1)
         )
@@ -5081,13 +5137,13 @@
     )
   )
 
-  (symbol (lib_id "power:VDD") (at 85.09 166.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_name "VDD_1") (lib_id "power:VDD") (at 85.09 166.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid acc3e639-a425-465a-b457-64c0b5fc8302)
     (property "Reference" "#PWR010" (at 85.09 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VDD" (at 85.09 161.29 0)
+    (property "Value" "VDD" (at 85.09 162.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 85.09 166.37 0)
@@ -5096,9 +5152,9 @@
     (property "Datasheet" "" (at 85.09 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 332ba9e7-5069-4f62-965e-f4280056c90b))
+    (pin "1" (uuid 06528174-caa5-4084-81bd-ea028ca15830))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR010") (unit 1)
         )
@@ -5124,7 +5180,7 @@
     (pin "1" (uuid d6081189-3992-4180-acb3-41d8b8abe483))
     (pin "2" (uuid 9e5cb9ca-c7fa-47ad-b72d-37ba1422ab72))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C2") (unit 1)
         )
@@ -5149,7 +5205,7 @@
     )
     (pin "1" (uuid 91440b01-0225-4e10-819b-a05d2f87ef17))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR06") (unit 1)
         )
@@ -5174,7 +5230,7 @@
     )
     (pin "1" (uuid e065e865-b1c4-492e-bb17-781595094693))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR07") (unit 1)
         )
@@ -5199,7 +5255,7 @@
     )
     (pin "1" (uuid 66264364-c291-4b19-82b4-6ca02eafbda8))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR030") (unit 1)
         )
@@ -5224,7 +5280,7 @@
     )
     (pin "1" (uuid 7292d897-a797-4c9c-b512-a6c620084f35))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR013") (unit 1)
         )
@@ -5249,7 +5305,7 @@
     )
     (pin "1" (uuid fde697c6-e3d6-4b87-ae36-8af86089bb87))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR015") (unit 1)
         )
@@ -5274,7 +5330,7 @@
     )
     (pin "1" (uuid a4becb96-7754-4465-b0e4-638a3f048582))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR028") (unit 1)
         )
@@ -5299,7 +5355,7 @@
     )
     (pin "1" (uuid 211e5a81-bb1f-41e5-81c0-800c0c88b733))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR037") (unit 1)
         )
@@ -5324,7 +5380,7 @@
     )
     (pin "1" (uuid 33c26bbe-e4e0-419d-9889-1fc592743896))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR033") (unit 1)
         )
@@ -5347,9 +5403,9 @@
     (property "Datasheet" "~" (at 266.7 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2a5569fa-28c9-4c9c-a535-fe3d1895e74c))
+    (pin "1" (uuid d7c50105-d0eb-4a7f-b68c-11dcad9dcd0b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#FLG05") (unit 1)
         )
@@ -5374,7 +5430,7 @@
     )
     (pin "1" (uuid c6dbad9d-74c3-43c6-aa3f-404dd467074b))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR041") (unit 1)
         )
@@ -5403,7 +5459,7 @@
     (pin "4" (uuid 7152f8f0-f436-4ff0-9e0b-7430a85624d4))
     (pin "5" (uuid 8d1534de-a6cc-4396-92db-e07b1cc4b22a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "J2") (unit 1)
         )
@@ -5429,7 +5485,7 @@
     (pin "1" (uuid e382bf55-a198-4d30-b2cb-3dfa5e4912a9))
     (pin "2" (uuid e5ef9471-b3dd-4fb3-984c-c2d81bc57364))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C26") (unit 1)
         )
@@ -5454,7 +5510,7 @@
     )
     (pin "1" (uuid 772b6e93-d8c4-4020-9040-3549eb499cf3))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR032") (unit 1)
         )
@@ -5477,9 +5533,9 @@
     (property "Datasheet" "~" (at 256.54 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c1d87f5-973c-487c-81f8-24432090d62b))
+    (pin "1" (uuid 212b6324-4ea5-44b9-ae7d-3e7c4e97ab7a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#FLG02") (unit 1)
         )
@@ -5504,7 +5560,7 @@
     )
     (pin "1" (uuid 445887ff-2d8b-4f5c-8fc1-b72e9c4b6217))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#FLG04") (unit 1)
         )
@@ -5529,7 +5585,7 @@
     )
     (pin "1" (uuid 17a16f92-e90f-4d63-ae18-9cd1a42672ac))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR04") (unit 1)
         )
@@ -5555,7 +5611,7 @@
     (pin "1" (uuid 3d2f420c-7f11-4b65-9cff-f31a2b26c57a))
     (pin "2" (uuid 7bdd687f-716f-4837-a4bd-dcd1a821b67a))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C10") (unit 1)
         )
@@ -5580,7 +5636,7 @@
     )
     (pin "1" (uuid 733da980-561d-4d3f-974f-26e494127561))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR024") (unit 1)
         )
@@ -5606,7 +5662,7 @@
     (pin "1" (uuid bf79a0ce-a2dc-4403-8a35-13dba4d18c79))
     (pin "2" (uuid f8422e7a-61f1-4a36-8c4f-9ed89c74e558))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "R6") (unit 1)
         )
@@ -5632,7 +5688,7 @@
     (pin "1" (uuid c2b9a2f5-860b-45b9-8a89-0f3e464adf5b))
     (pin "2" (uuid 41531751-f154-409d-89a4-8e34f09d2a65))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C28") (unit 1)
         )
@@ -5658,7 +5714,7 @@
     (pin "1" (uuid bc329071-1ab4-4a25-800c-609edc8cc12f))
     (pin "2" (uuid 0ec651ec-fd7a-458b-9d99-898981536396))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L8") (unit 1)
         )
@@ -5684,7 +5740,7 @@
     (pin "1" (uuid 86a1baf6-bc62-4616-b432-11b8fdbc28e9))
     (pin "2" (uuid b6a2b2fb-cdf7-4176-a2cd-e134f2374ffe))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "Y1") (unit 1)
         )
@@ -5710,7 +5766,7 @@
     (pin "1" (uuid b979b2f4-cea0-4194-84c4-77ce612597eb))
     (pin "2" (uuid 94bb0582-1058-4258-af58-1d080d166769))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L6") (unit 1)
         )
@@ -5735,7 +5791,7 @@
     )
     (pin "1" (uuid 0e372a5a-1a5e-45ab-b881-de2d5f6276f1))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR018") (unit 1)
         )
@@ -5761,7 +5817,7 @@
     (pin "1" (uuid e675c550-fb00-4412-9104-8319bdf6b7fc))
     (pin "2" (uuid 4304e06c-7848-49e4-aa47-ae37cfcb36c1))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C20") (unit 1)
         )
@@ -5786,7 +5842,7 @@
     )
     (pin "1" (uuid b0ac3705-85e6-4a1d-b423-f9b569a63c4d))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR014") (unit 1)
         )
@@ -5812,7 +5868,7 @@
     (pin "1" (uuid 9c8d01d8-374d-49ce-9f71-296df93639ef))
     (pin "2" (uuid 08dd463c-b9d2-4147-95ef-a32b022d3aad))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C3") (unit 1)
         )
@@ -5837,7 +5893,7 @@
     )
     (pin "1" (uuid 0414e40e-8688-486c-a447-8e112417b89f))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "#PWR042") (unit 1)
         )
@@ -5863,7 +5919,7 @@
     (pin "1" (uuid 7d83daa6-103f-4ea6-9ce2-448c2a7d6180))
     (pin "2" (uuid fb421785-9d7a-4df1-87ff-34562635fab7))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C16") (unit 1)
         )
@@ -5889,7 +5945,7 @@
     (pin "1" (uuid 3638970a-f763-408e-82a0-4683df337fbf))
     (pin "2" (uuid e6a3e1f8-b4a7-4933-b223-4d8240e4fd01))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L5") (unit 1)
         )
@@ -5915,7 +5971,7 @@
     (pin "1" (uuid 5b2bbf71-29b5-482c-a427-f548527298d4))
     (pin "2" (uuid a74f434a-ef55-4f78-a3a6-5d17b6a813bc))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "C6") (unit 1)
         )
@@ -5941,7 +5997,7 @@
     (pin "1" (uuid 9e6c8848-40b1-44b9-9bdb-4776146403b5))
     (pin "2" (uuid 33719d33-5bba-4f9c-8814-9d05b9526cd2))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "L1") (unit 1)
         )
@@ -5975,7 +6031,7 @@
     (pin "8" (uuid fcc0a5b1-ef7c-480f-9871-965c240ef022))
     (pin "9" (uuid 285e66a8-3875-4c96-9b1a-e455744b37cb))
     (instances
-      (project "pierwszy"
+      (project "IoT"
         (path "/dfb115ab-ac05-4f80-8287-e227a3765aec"
           (reference "U6") (unit 1)
         )
